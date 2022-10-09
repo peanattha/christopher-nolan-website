@@ -1,0 +1,52 @@
+section{
+    margin-left:  40px;
+    margin-right: 40px;
+}
+th,
+td {
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+th {
+    color: whitesmoke;
+    background-color: #2c303a;
+}
+
+.award a:link,
+.income a:link,
+.flimaward a:link,
+.producer a:link {
+    color: whitesmoke;
+}
+
+.award a:visited,
+.income a:visited,
+.flimaward a:visited,
+.producer a:visited {
+    color: whitesmoke;
+}
+
+tr:hover {
+    background-color: #2c303a;
+}
+
+.y {
+    background-color: #2c303a;
+}
+
+.head{
+    
+    margin-left: 20px;
+    font-size: 3em;
+    font-weight: 600;
+    padding-top: 1.5em;
+}

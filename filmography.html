@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#131417">
+    <title>Filmography</title>
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="CSS/flim.css">
+    <script defer src="./JS/flim.js"></script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="./img/logo.jpg">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="container-nav" id="totop">
+        <div class="navbar" id="nav-bar">
+            <a href="index.html" class="navbar-brand">Nolan</a>
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav_link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">about</a>
+                </li>
+                <div class="dropdown">
+                    <li class="nav-item">
+                        <a href="filmography.html" class="nav_link active">filmography</a>
+                        <div class="nav_link dropdown-content">
+                            <a href="movie/dunkirk.html">Dunkirk</a>
+                            <a href="movie/inception.html">Inception</a>
+                            <a href="movie/tenet.html">Tenet</a>
+                            <a href="movie/batman_begins.html">Batman Begins</a>
+                            <a href="movie/the_dark_knight.html">The Dark Knight</a>
+                            <a href="movie/the_dark_knight_rises.html">The Dark Knight Rises</a>
+                            <a href="movie/following.html">Following</a>
+                            <a href="movie/insomnia.html">Insomnia</a>
+                            <a href="movie/interstellar.html">Interstellar</a>
+                            <a href="movie/memento.html">Memento</a>
+                            <a href="movie/the_prestige.html">The Prestige</a>
+                            <a href="movie/quay.html">Quay</a>
+                            <a href="movie/doodlebug.html">Doodlebug</a>
+                            <a href="producer/batman_v_superman.html">Batman V Superman</a>
+                            <a href="producer/justice_league.html">Justice League</a>
+                            <a href="producer/man_of_steel.html">Man Of Steel</a>
+                            <a href="producer/transcendence.html">Transcendence</a>
+                        </div>
+                    </li>
+                </div>
+                
+                <li class="nav-item">
+                    <a href="award.html">award</a>
+                </li>
+                <li class="nav-item">
+                    <a href="QnA.html">QnA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- SECTION -->
+    <section>
+        <div class="popup" id="popup">
+            <div class="popup-header">
+                <div class="title">Warning</div>
+                <button class="close-button" id="close">&times;</button>
+            </div>
+            <div class="popup-body1" id="popup-body1">
+                <p>Please Input Name Movie !!!</p>
+            </div>
+            <div class="popup-body2" id="popup-body2">
+                <p>Not Fund Movie !!!</p>
+            </div>
+        </div>
+
+        <div class="background-blur" id="background-blur">
+            <div class="search">
+                <input type="button" value="Search" id="buttonSearch" onclick="searchMovie()">
+                <input type="text" name="searchNameMovie" placeholder="Search Movie" id="inputNameMovie" list="Movie_name">
+
+            </div>
+            <!-- ผลงานที่กำกับเอง -->
+            <ul>
+                <li>
+                    <h1 class="head">Directed Works</h1>
+                </li>
+            </ul>
+            <div>
+                <ul class="flim">
+                    <li>
+                        <a href="movie/dunkirk.html">
+                            <img src="img/Flim/dunkirk/dunkirk_1.jpg" aria-label="Dunkirk" alt="">
+                        </a>
+                        <div class="releasedate" id="date1"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name1"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/inception.html">
+                            <img src="img/Flim/inception/Inception.jpg" aria-label="inception" alt="">
+                        </a>
+                        <div class="releasedate" id="date2"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/tenet.html">
+                            <img src="img/Flim/Tenet.jpg" aria-label="tenet" alt="">
+                        </a>
+                        <div class="releasedate" id="date3"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name3"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/batman_begins.html">
+                            <img src="img/Flim/bat_begin.jpg" aria-label="batman_begins" alt="">
+                        </a>
+                        <div class="releasedate" id="date4"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name4"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/the_dark_knight.html">
+                            <img src="img/Flim/the dark knight.jpg" aria-label="the_dark_knight" alt="">
+                        </a>
+                        <div class="releasedate" id="date5"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name5"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/the_dark_knight_rises.html">
+                            <img src="img/Flim/tdk_rises.jpg" aria-label="the_dark_knight_rises" alt="">
+                        </a>
+                        <div class="releasedate" id="date6"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name6"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/following.html">
+                            <img src="img/Flim/following/following.jpg" aria-label="following" alt="">
+                        </a>
+                        <div class="releasedate" id="date7"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name7"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/insomnia.html">
+                            <img src="img/Flim/insomnia.jpg" aria-label="insomnia" alt="">
+                        </a>
+                        <div class="releasedate" id="date8"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name8"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/interstellar.html">
+                            <img src="img/Flim/interstellar/Interstellar.jpg" aria-label="interstellar" alt="">
+                        </a>
+                        <div class="releasedate" id="date9"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name9"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/memento.html">
+                            <img src="img/Flim/Memento.png" aria-label="memento" alt="">
+                        </a>
+                        <div class="releasedate" id="date10"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name10"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/the_prestige.html">
+                            <img src="img/Flim/prestige.jpg" aria-label="the_prestige" alt="">
+                        </a>
+                        <div class="releasedate" id="date11"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name11"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- หนังสั้น -->
+            <ul>
+                <li>
+                    <h1 class="head">Short Film</h1>
+                </li>
+            </ul>
+            <div class="flim">
+                <ul>
+                    <li>
+                        <a href=" movie/quay.html">
+                            <img src="img/Flim/quay.jpg" aria-label="quay" alt="">
+                        </a>
+                        <div class="releasedate" id="date12"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name12"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="movie/doodlebug.html">
+                            <img src="img/Flim/doodlebug.jpg" aria-label="doodlebug" alt="">
+                        </a>
+                        <div class="releasedate" id="date13"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name13"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- อำนวยการสร้าง -->
+            <ul>
+                <li>
+                    <h1 class="head">executive producer</h1>
+                </li>
+            </ul>
+            <div class="flim">
+                <ul>
+                    <li>
+                        <a href="producer/batman_v_superman.html">
+                            <img src="img/Flim/Batman v Superman.jpg" aria-label="batman_v_superman" alt="">
+                        </a>
+                        <div class="releasedate" id="date14"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name14"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="producer/justice_league.html">
+                            <img src="img/Flim/Justice League.jpg" aria-label="batman_v_superman" alt="">
+                        </a>
+                        <div class="releasedate" id="date15"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name15"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="producer/man_of_steel.html">
+                            <img src="img/Flim/manofsteel.jpg" aria-label="batman_v_superman" alt="">
+                        </a>
+                        <div class="releasedate" id="date16"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name16"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="producer/transcendence.html">
+                            <img src="img/Flim/transcendence.jpg" aria-label="batman_v_superman" alt="">
+                        </a>
+                        <div class="releasedate" id="date17"></div>
+                        <div class="caption">
+                            <div class="caption-text" id="name17"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <a href="#totop" class="to-top" aria-label="totop">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </a>
+    <script src="JS/main.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>about</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                        quidem dolorum nulla saepe voluptates incidunt nesciunt assumenda
+                        nihil alias tempora possimus, omnis ducimus nobis cumque debitis
+                        placeat nemo consequuntur quae!
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>footer menu</h4>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">filmography</a></li>
+                        <li><a href="#">award</a></li>
+                        <li><a href="#">QnA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social links</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="fb"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="ig"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
