@@ -13,6 +13,7 @@ $(document).ready(function(){
       success: showAwardsAll
     })
 })
+
 function showAwardsAll(xml) {
     let i=1
     let dataAwardsAll=""
@@ -96,6 +97,7 @@ $(document).ready(function(){
       success: showFeedback
     })
 })
+
 function showFeedback(xml) {
     let i=0
     let dataFeedback=""
@@ -141,6 +143,7 @@ $(document).ready(function(){
       success: showDirectors
     })
 })
+
 function showDirectors(xml) {
     let i=0
     let dataDirectors=""
@@ -198,6 +201,7 @@ $(document).ready(function(){
       success: showex_producer
     })
 })
+
 function showex_producer(xml) {
     let i=0
     let dataex_producer=""
